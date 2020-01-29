@@ -1,4 +1,8 @@
-html {
+/* *{
+  outline: 1px solid red;
+} */
+
+  html {
   box-sizing: border-box;
 }
 
@@ -28,6 +32,7 @@ img{
 
 .menu{
     padding: 78px 0px;
+    margin-bottom: 26px;
 }
 
 .navigation-menu {
@@ -68,6 +73,7 @@ img{
   margin: 0;
   padding: 0;
   font-size: 0;
+  margin-bottom: 52px;
 }
 
 .site-section{
@@ -75,6 +81,7 @@ img{
     width: 420px;
     margin-right: 60px;
     margin-bottom: 134px;
+    vertical-align: top;
 }
 
 .site-section:nth-child(2n){
@@ -92,6 +99,7 @@ img{
 .header{
     font-size: 14px;
     margin-bottom: 32px;
+    font-weight: 300;
 }
 
 .title {
@@ -99,6 +107,7 @@ img{
   line-height: 36px;
   text-transform: initial;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .site-section p{
@@ -108,8 +117,16 @@ img{
 }
 
 button{
-    text-align: center;
+  display: block;
+  margin: 0 auto 70px auto;
+  padding: 24px 34px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  border: 1px solid #626262;
+  cursor: pointer;
 }
+
 .visually-hidden:not(focus):not(active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
