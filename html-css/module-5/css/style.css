@@ -15,7 +15,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ img {
 .menu {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  height: 162px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -85,80 +85,77 @@ img {
 }
 
 /* Banner */
-.banner{
+.banner {
   position: relative;
-  width: 1600px;
-  margin: 0 auto;
+  max-width: 1600px;
+  margin: 0px auto 100px;
 }
 
-.carousel-right{
-  position: absolute;
-  top: 245px;
-  right: 230px;
-  background-color: #1abc9c;
-  color: #ffffff;
-  border: none;
-  font-size: 100px;
-  line-height: 11px;
-  text-transform: uppercase;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
-
-  .carousel-left{
-    position: absolute;
-    top: 245px;
-    left: 230px;
-    background-color: #1abc9c;
-    color: #ffffff;
-    border: none;
-    font-size: 100px;
-    line-height: 11px;
-    text-transform: uppercase;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
-.banner h2{
+.carousel-right {
   position: absolute;
   bottom: 50%;
-  right: 50%;
+  right: 10%;
+  transform: translate(-50%, 50%);
+  background-color: rgba(78, 198, 171, 0.651);
+  border: none;
+}
+
+.carousel-left {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
   transform: translate(50%, 50%);
+  background-color: rgba(78, 198, 171, 0.651);
+  border: none;
+}
+
+.carousel-right:hover,
+.carousel-right:focus {
+  background-color: rgb(78, 198, 171);
+}
+
+.carousel-left:hover,
+.carousel-left:focus {
+  background-color: rgb(78, 198, 171);
+}
+
+.banner h2 {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 60px;
   line-height: 82px;
-  text-align: center;
 }
 
-.banner p{
+.banner p {
   position: absolute;
-  top: 285px;
-  left: 435px;
+  margin: 0;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 54px;
-  text-align: center;
 }
 
-.banner::before{
+.banner::before {
   position: absolute;
   content: "";
   display: block;
   background-image: linear-gradient(rgb(0, 0, 2), rgb(50, 50, 50));
-  width: 1600px;
-  height: 600px;
-  opacity: 0.522;;
+  width: 100%;
+  height: 100%;
+  opacity: 0.522;
 }
-
-
-
 
 /* Products section */
 
@@ -196,17 +193,112 @@ img {
 }
 
 .product-item {
+  position: relative;
   width: 255px;
   float: left;
   margin: 0px 30px 30px 0px;
+}
+
+.card-hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 282px;
+  border-width: 10px;
+  border-color: rgba(255, 255, 255);
+  border-style: solid;
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+}
+
+.buttons{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.like {
+  margin: 0px 6px 0px 0px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 48px;
+  height: 48px;
+}
+
+.like:hover, .like:focus{
+  border-color: rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.shuffle{
+  margin: 0px 6px 0px 0px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 48px;
+  height: 48px;
+}
+.shuffle:hover, .shuffle:focus{
+  border-color: rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.clock{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 48px;
+  height: 48px;
+}
+.clock:hover, .clock:focus{
+  border-color: rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.cart{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  width: 164px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Opensans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+}
+
+.cart:hover, .cart:focus{
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+
+.product-item:hover .card-hover-effect{
+  opacity: 0.549;
+}
+
+.product-item:hover .buttons{
+  opacity: 1;
 }
 
 .product-item:hover .product-description {
   background-color: rgb(26, 188, 156);
 }
 
-.product-item:focus .product-description {
-  background-color: rgb(26, 188, 156);
+.product-item:hover{
+  cursor: pointer;
 }
 
 .product-item:nth-child(4n) {
@@ -253,7 +345,7 @@ img {
 }
 
 /* Footer */
-.designed-by{
+.designed-by {
   margin: 0;
   padding: 33px 0px;
   background-color: rgb(50, 50, 50);
@@ -267,11 +359,15 @@ img {
   line-height: 28px;
 }
 
-.designed-by a{
+.designed-by a {
   text-decoration: none;
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: #ffffff;
+}
+
+.designed-by a:hover, .designed-by a:focus{
   color: #46bfa9;
 }
