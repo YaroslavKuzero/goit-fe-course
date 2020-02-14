@@ -19,8 +19,8 @@
     <title>homework module 5</title>
   </head>
   <body>
-    <header class="wrapper">
-      <nav class="menu clearfix">
+    <header class="site-header">
+      <nav class="menu wrapper clearfix">
         <h1 class="logo"><a href="#">mart</a></h1>
         <ul class="navigation clearfix">
           <li><a class="navigation-item" href="#">home</a></li>
@@ -32,9 +32,9 @@
         </ul>
       </nav>
     </header>
-    <div class="banner">
+    <section class="banner">
       <img src="img/banner.jpg" alt="happy peaple" width="1600" height="600" />
-      <div class="banner-effects">
+      <div class="banner-effects wrapper">
         <button class="carousel-left">
           <svg
             version="1.1"
@@ -44,15 +44,18 @@
             height="100"
             viewbox="0 0 32 32"
           >
-            <g id="icomoon-ignore"></g>
+            <g id="icomoon-ignore-carousel-left"></g>
             <path
               d="M12.792 15.233l-0.754 0.754 6.035 6.035 0.754-0.754-5.281-5.281 5.256-5.256-0.754-0.754-3.013 3.013z"
               fill="#ffffff"
             ></path>
           </svg>
+          <span class="visually-hidden">carousel to left</span>
         </button>
-        <h2>affordable paris tours</h2>
-        <p>city tours/tour tickets/tour guides</p>
+        <div class="carousel-description">
+          <h2>affordable paris tours</h2>
+          <p>city tours/tour tickets/tour guides</p>
+        </div>
         <button class="carousel-right">
           <svg
             version="1.1"
@@ -62,19 +65,20 @@
             height="100"
             viewbox="0 0 32 32"
           >
-            <g id="icomoon-ignore-angle-right"></g>
+            <g id="icomoon-ignore-carousel-right"></g>
             <path
               d="M19.159 16.767l0.754-0.754-6.035-6.035-0.754 0.754 5.281 5.281-5.256 5.256 0.754 0.754 3.013-3.013z"
               fill="#ffffff"
             ></path>
           </svg>
+          <span class="visually-hidden">carousel to right</span>
         </button>
       </div>
-    </div>
-    <main class="wrapper">
+    </section>
+    <main>
       <section class="products clearfix">
         <h2 class="title">new collection</h2>
-        <ul class="products-list clearfix">
+        <ul class="products-list wrapper clearfix">
           <li class="product-item">
             <a href="#"
               ><img
@@ -83,86 +87,99 @@
                 width="255"
                 height="282"
             /></a>
-            <div class="card-hover-effect"></div>
-            <div class="buttons">
-              <button class="like">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-like"></g>
-                  <path
-                    d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="shuffle">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-shuffle"></g>
-                  <path
-                    d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="clock">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-clock"></g>
-                  <path
-                    d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="cart clearfix">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="48"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-cart"></g>
-                  <path
-                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-                <span>add to cart</span>
-              </button>
+            <div class="card-overlay">
+              <span class="visually-hidden">dark card-overlay</span>
             </div>
+            <ul class="buttons clearfix">
+              <li>
+                <button type="button" class="like card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-like"></g>
+                    <path
+                      d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">add to favorites</span>
+                </button>
+              </li>
+              <li>
+                <button class="shuffle card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-shuffle"></g>
+                    <path
+                      d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to shuffle products</span>
+                </button>
+              </li>
+              <li>
+                <button class="clock card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-clock"></g>
+                    <path
+                      d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to adjourn good</span>
+                </button>
+              </li>
+              <li>
+                <button class="cart card-btn clearfix">
+                  <span>add to cart</span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-cart"></g>
+                    <path
+                      d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                      fill="#0000000"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
             <div class="product-description clearfix">
               <h3 class="product-item-name"><a href="#">blue tshirt</a></h3>
               <div class="product-item-price">$26</div>
@@ -176,86 +193,99 @@
                 width="255"
                 height="282"
             /></a>
-            <div class="card-hover-effect"></div>
-            <div class="buttons">
-              <button class="like">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-like2"></g>
-                  <path
-                    d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="shuffle">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-shuffle2"></g>
-                  <path
-                    d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="clock">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-clock2"></g>
-                  <path
-                    d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="cart clearfix">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="48"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-cart2"></g>
-                  <path
-                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-                <span>add to cart</span>
-              </button>
+            <div class="card-overlay">
+              <span class="visually-hidden">dark card-overlay</span>
             </div>
+            <ul class="buttons clearfix">
+              <li>
+                <button class="like card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-like2"></g>
+                    <path
+                      d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">add to favorites</span>
+                </button>
+              </li>
+              <li>
+                <button class="shuffle card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-shuffle2"></g>
+                    <path
+                      d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to shuffle products</span>
+                </button>
+              </li>
+              <li>
+                <button class="clock card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-clock2"></g>
+                    <path
+                      d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to adjourn good</span>
+                </button>
+              </li>
+              <li>
+                <button class="cart card-btn clearfix">
+                  <span>add to cart</span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-cart2"></g>
+                    <path
+                      d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                      fill="#0000000"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
             <div class="product-description clearfix">
               <h3 class="product-item-name"><a href="#">woman shirt</a></h3>
               <div class="product-item-price">$31</div>
@@ -269,86 +299,99 @@
                 width="255"
                 height="282"
             /></a>
-            <div class="card-hover-effect"></div>
-            <div class="buttons">
-              <button class="like">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-like3"></g>
-                  <path
-                    d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="shuffle">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-shuffle3"></g>
-                  <path
-                    d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="clock">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-clock3"></g>
-                  <path
-                    d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="cart clearfix">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="48"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-cart3"></g>
-                  <path
-                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-                <span>add to cart</span>
-              </button>
+            <div class="card-overlay">
+              <span class="visually-hidden">dark card-overlay</span>
             </div>
+            <ul class="buttons clearfix">
+              <li>
+                <button class="like card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-like3"></g>
+                    <path
+                      d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">add to favorites</span>
+                </button>
+              </li>
+              <li>
+                <button class="shuffle card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-shuffle3"></g>
+                    <path
+                      d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to shuffle products</span>
+                </button>
+              </li>
+              <li>
+                <button class="clock card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-clock3"></g>
+                    <path
+                      d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to adjourn good</span>
+                </button>
+              </li>
+              <li>
+                <button class="cart card-btn clearfix">
+                  <span>add to cart</span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-cart3"></g>
+                    <path
+                      d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                      fill="#0000000"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
             <div class="product-description clearfix">
               <h3 class="product-item-name"><a href="#">yellow tshirt</a></h3>
               <div class="product-item-price">$21</div>
@@ -362,86 +405,99 @@
                 width="255"
                 height="282"
             /></a>
-            <div class="card-hover-effect"></div>
-            <div class="buttons">
-              <button class="like">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-like4"></g>
-                  <path
-                    d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="shuffle">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-shuffle4"></g>
-                  <path
-                    d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="clock">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-clock4"></g>
-                  <path
-                    d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-              </button>
-              <button class="cart clearfix">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="48"
-                  viewbox="0 0 32 32"
-                >
-                  <g id="icomoon-ignore-cart4"></g>
-                  <path
-                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
-                    fill="#ffffff"
-                  ></path>
-                </svg>
-                <span>add to cart</span>
-              </button>
+            <div class="card-overlay">
+              <span class="visually-hidden">dark card-overlay</span>
             </div>
+            <ul class="buttons clearfix">
+              <li>
+                <button class="like card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-like4"></g>
+                    <path
+                      d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">add to favorites</span>
+                </button>
+              </li>
+              <li>
+                <button class="shuffle card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-shuffle4"></g>
+                    <path
+                      d="M23.812 18.906l3.494 3.496h-6.296l-13.012-13.861h-5.345v1.066h4.884l13.012 13.861h6.758l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M7.537 22.402h-4.884v1.066h5.345l5.163-5.5-0.778-0.73z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M21.011 9.607h6.295l-3.485 3.486 0.754 0.754 4.772-4.774-4.781-4.782-0.754 0.754 3.494 3.496h-6.758l-5.185 5.545 0.779 0.728z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to shuffle products</span>
+                </button>
+              </li>
+              <li>
+                <button class="clock card-btn">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-clock4"></g>
+                    <path
+                      d="M16 3.205c-7.066 0-12.795 5.729-12.795 12.795s5.729 12.795 12.795 12.795 12.795-5.729 12.795-12.795c0-7.066-5.729-12.795-12.795-12.795zM16 27.729c-6.467 0-11.729-5.261-11.729-11.729s5.261-11.729 11.729-11.729 11.729 5.261 11.729 11.729c0 6.467-5.261 11.729-11.729 11.729z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M16 17.066h-6.398v1.066h7.464v-10.619h-1.066z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  <span class="visually-hidden">to adjourn good</span>
+                </button>
+              </li>
+              <li>
+                <button class="cart card-btn clearfix">
+                  <span>add to cart</span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="32"
+                    viewbox="0 0 32 32"
+                  >
+                    <g id="icomoon-ignore-cart4"></g>
+                    <path
+                      d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                      fill="#0000000"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
             <div class="product-description clearfix">
               <h3 class="product-item-name"><a href="#">cool lingerie</a></h3>
               <div class="product-item-price">$56</div>
@@ -450,7 +506,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="info">
       <p class="designed-by">
         all rights reserved © dokan | designed <a href="#">ThemenGraph</a>
       </p>

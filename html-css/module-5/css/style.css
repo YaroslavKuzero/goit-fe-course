@@ -88,25 +88,29 @@ img {
 .banner {
   position: relative;
   width: 1600px;
-  margin: 0px auto 100px;
+  margin: 0 auto;
 }
 
-.carousel-right {
+.banner-effects{
   position: absolute;
-  bottom: 50%;
-  right: 10%;
-  transform: translate(-50%, 50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner button {
+  width: 100px;
+  height: 100px;
   background-color: rgba(78, 198, 171, 0.651);
   border: none;
 }
 
 .carousel-left {
-  position: absolute;
-  bottom: 50%;
-  left: 10%;
-  transform: translate(50%, 50%);
-  background-color: rgba(78, 198, 171, 0.651);
-  border: none;
+  float: left;
+}
+
+.carousel-right {
+  float: right;
 }
 
 .carousel-right:hover,
@@ -119,29 +123,25 @@ img {
   background-color: rgb(78, 198, 171);
 }
 
-.banner h2 {
-  position: absolute;
+.carousel-description {
+  display: inline-block;
   margin: 0;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  padding-left: 80px;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+}
+.banner h2 {
+  margin: 0;
+  padding: 0;
   font-weight: 900;
   font-size: 60px;
   line-height: 82px;
 }
 
 .banner p {
-  position: absolute;
   margin: 0;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 54px;
@@ -158,6 +158,12 @@ img {
 }
 
 /* Products section */
+.products {
+  padding: 100px 0px;
+  background-color: rgb(233, 240, 253);
+  width: 1600px;
+  margin: 0 auto;
+}
 
 .title {
   margin: 0;
@@ -180,16 +186,10 @@ img {
   content: "";
 }
 
-.products {
-  margin-bottom: 104px;
-}
-
 .products-list {
-  margin: 0;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
-  line-height: 40px;
 }
 
 .product-item {
@@ -197,117 +197,6 @@ img {
   width: 255px;
   float: left;
   margin: 0px 30px 30px 0px;
-}
-
-.card-hover-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 255px;
-  height: 282px;
-  border-width: 10px;
-  border-color: rgba(255, 255, 255);
-  border-style: solid;
-  background-color: rgba(0, 0, 0);
-  opacity: 0;
-}
-
-.buttons{
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.like {
-  margin: 0px 6px 0px 0px;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  width: 48px;
-  height: 48px;
-}
-
-.like:hover, .like:focus{
-  border-color: rgb(26, 188, 156);
-  background-color: rgb(26, 188, 156);
-  cursor: pointer;
-}
-
-.shuffle{
-  margin: 0px 6px 0px 0px;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  width: 48px;
-  height: 48px;
-}
-.shuffle:hover, .shuffle:focus{
-  border-color: rgb(26, 188, 156);
-  background-color: rgb(26, 188, 156);
-  cursor: pointer;
-}
-
-.clock{
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  width: 48px;
-  height: 48px;
-}
-.clock:hover, .clock:focus{
-  border-color: rgb(26, 188, 156);
-  background-color: rgb(26, 188, 156);
-  cursor: pointer;
-}
-
-.cart{
-  margin: 0;
-  padding: 0;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  width: 164px;
-
-}
-
-.cart span{
-  display: block;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Opensans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: center;
-  float: right;
-  margin-right: 18px;
-}
-
-.cart:hover, .cart:focus{
-  background-color: rgb(50, 50, 50);
-  cursor: pointer;
-}
-
-.product-item:hover .card-hover-effect{
-  opacity: 0.549;
-}
-
-.product-item:hover .buttons{
-  opacity: 1;
-}
-
-.product-item:hover .product-description {
-  background-color: rgb(26, 188, 156);
-}
-
-.product-item:hover{
-  cursor: pointer;
 }
 
 .product-item:nth-child(4n) {
@@ -330,6 +219,7 @@ img {
   margin: 0;
   padding: 0;
   background-color: rgb(50, 50, 50);
+  line-height: 40px;
 }
 
 .product-item-name {
@@ -351,6 +241,105 @@ img {
 
 img {
   background-color: rgb(233, 240, 253);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 235px;
+  height: 263px;
+  outline: 10px solid rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 166px;
+  opacity: 0;
+}
+
+.buttons li {
+  margin: 0;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.buttons li:nth-last-child(-n + 2) {
+  margin-right: 0;
+}
+.buttons li:last-child {
+  margin-bottom: 0;
+}
+
+.card-btn {
+  margin: 0;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.cart {
+  width: 166px;
+  background-color: rgb(50, 50, 50);
+}
+
+.card-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+.card-btn path {
+  fill: #ffffff;
+}
+
+.card-btn:hover,
+.card-btn:focus {
+  border: none;
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.cart span {
+  float: right;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Opensans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 50px;
+}
+
+.cart svg {
+  float: left;
+}
+
+.product-item:hover .product-description {
+  background-color: rgb(26, 188, 156);
+}
+
+.product-item:hover {
+  cursor: pointer;
+}
+
+.product-item:hover .card-overlay {
+  opacity: 0.549;
+}
+
+.product-item:hover .buttons {
+  opacity: 1;
 }
 
 /* Footer */
@@ -377,6 +366,22 @@ img {
   color: #ffffff;
 }
 
-.designed-by a:hover, .designed-by a:focus{
+.designed-by a:hover,
+.designed-by a:focus {
   color: #46bfa9;
+}
+
+.visually-hidden:not(focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
