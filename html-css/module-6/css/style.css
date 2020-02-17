@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1200px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.visually-hidden:not(focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.logo{
+    margin: 0;
+    padding: 0;
+}
+.logo a{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+    margin-bottom: 134px;
+}
+
+.menu-list{
+    list-style: none;
+    width: 510px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #95e1d3;
+    transition: color 200ms linear;
+}
+
+.menu-item{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.menu-item-link::after{
+    display: block;
+    content: '';
+    background-color: rgb(243, 129, 129);
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 0px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: rgb(243, 129, 129);
+}
+
+.menu-item:hover .menu-item-link::after {
+    opacity: 1;
+}
+
+/* Services */
+.title-slogan{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.title-slogan::after{
+    display: block;
+    content: "";
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+    margin: 43px auto 0px;
+}
+
+.services-item{
+    margin: 0;
+    padding: 0px 0px 0px 80px;
+    width: 380px;
+    list-style: none;
+    background-image: url(/html-css/module-6/img/icons/photography.png);
+    background-repeat: no-repeat;
+    background-position: 24px 0;
+}
+
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* .services-item::before{
+    display: inline-block;
+    content: '';
+    background-image: url(/html-css/module-6/img/icons/photography.png);
+    width: 32px;
+    height: 32px;
+} */
+
+
+/* font-family: 'Roboto', sans-serif; 300i, 400
+font-family: 'Montserrat', sans-serif; 400, 700
+font-family: 'Kaushan Script', cursive;  400 */
