@@ -389,6 +389,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
     height: 40px;
     border: none;
+    cursor: pointer;
 }
 
 .subscribe input{
@@ -411,7 +412,3 @@ input::placeholder{
     padding: 0;
     margin: 0;
 }
-
-/* font-family: 'Roboto', sans-serif; 300i, 400
-font-family: 'Montserrat', sans-serif; 400, 700
-font-family: 'Kaushan Script', cursive;  400 */
