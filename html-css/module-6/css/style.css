@@ -156,27 +156,27 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item:nth-child(1) {
-  background-image: url(/html-css/module-6/img/icons/photography.png);
+  background-image: url(../img/icons/photography.png);
 }
 
 .services-item:nth-child(2) {
-  background-image: url(/html-css/module-6/img/icons/web_design.png);
+  background-image: url(../img/icons/web_design.png);
 }
 
 .services-item:nth-child(3) {
-  background-image: url(/html-css/module-6/img/icons/creativity.png);
+  background-image: url(../img/icons/creativity.png);
 }
 
 .services-item:nth-child(4) {
-  background-image: url(/html-css/module-6/img/icons/seo.png);
+  background-image: url(../img/icons/seo.png);
 }
 
 .services-item:nth-child(5) {
-  background-image: url(/html-css/module-6/img/icons/css_html.png);
+  background-image: url(../img/icons/css_html.png);
 }
 
 .services-item:nth-child(6) {
-  background-image: url(/html-css/module-6/img/icons/digital.png);
+  background-image: url(../img/icons/digital.png);
 }
 
 .services-name {
@@ -318,19 +318,19 @@ input[type="radio"].visually-hidden {
 }
 
 .facebook a {
-  background-image: url(/html-css/module-6/img/icons/social-icons/facebook.png);
+  background-image: url(../img/icons/social-icons/facebook.png);
 }
 
 .twitter a {
-  background-image: url(/html-css/module-6/img/icons/social-icons/twitter.png);
+  background-image: url(../img/icons/social-icons/twitter.png);
 }
 
 .pinterest a {
-  background-image: url(/html-css/module-6/img/icons/social-icons/pinterest.png);
+  background-image: url(../img/icons/social-icons/pinterest.png);
 }
 
 .instagram a {
-  background-image: url(/html-css/module-6/img/icons/social-icons/instagram.png);
+  background-image: url(../img/icons/social-icons/instagram.png);
 }
 
 .social-icons a:hover,
