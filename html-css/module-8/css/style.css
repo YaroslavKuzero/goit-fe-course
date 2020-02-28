@@ -236,6 +236,10 @@ img {
   .partners-list {
     width: 492px;
   }
+
+  .partners-item:nth-child(-n + 2) {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -286,6 +290,7 @@ img {
   .partners-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 40px;
@@ -295,10 +300,6 @@ img {
     width: 236px;
     margin: 0;
     padding: 0;
-  }
-
-  .partners-item:nth-child(-n + 2) {
-    margin-bottom: 60px;
   }
 
   .btn-more {
