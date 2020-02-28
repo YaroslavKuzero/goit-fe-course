@@ -14,178 +14,304 @@ img {
   height: auto;
 }
 
-.wrapper{
-    width: 320px;
-    margin: 0 auto;
-}
-.entrance{
- display: flex;
- justify-content: center;
- padding-top: 20px;
- margin-bottom: 117px;
- order: -1;
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.entrance a{
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    line-height: 32px;
-    text-align: center;
+.site-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.entrance a:not(:last-child){
-    margin-right: 40px;
+.entrance {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 117px;
 }
 
-.signup{
-    border: 2px solid #ffffff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 36px;
-    width: 92px;
-}
-.banner{
-    background-image: url(../img/banner-mob.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 542px;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 68px;
+.login,
+.signup {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 36px;
+  text-align: center;
+  width: 92px;
 }
 
-.logo h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
+.signup {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
 }
 
-.logo{
-    text-decoration: none;
-    margin-bottom: 34px;
+.promo {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 320px;
+  min-height: 540px;
+  background-color: #000000;
 }
 
-.slogan{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+.logo h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.full-slogan{
-    font-family: "Roboto", sans serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 19px;
+.logo {
+  text-decoration: none;
+  margin-bottom: 34px;
 }
 
-.find{
-    width: 280px;
-    height: 40px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: rgb(255, 78, 80);
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
+.slogan {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.section-title{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: rgb(51, 51, 51);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 18px;
+.full-slogan {
+  font-family: "Roboto", sans serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.partners-list{
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 22px;
+.btn-find {
+  display: block;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
 }
 
-.partners-list img{
-    margin: 0 auto;
-    padding: 0;
-    border-radius: 50%;
-    margin-bottom: 22px;
-}
-.partners-item{
-    width: 194px;
-    margin: 0 auto;
-    padding: 0;
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
 }
 
-.partners-item:not(:last-child){
+.partners {
+  padding-top: 68px;
+}
+
+.partners-list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+}
+.partner-photo img {
+  border-radius: 50%;
+}
+
+.partner-photo {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.partner-photo::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 37px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.tv-icon::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../img/icons/tv.png);
+}
+
+.flask-icon::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../img/icons/flask.png);
+}
+
+.cup-icon::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../img/icons/cup.png);
+}
+
+.fly-icon::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../img/icons/fly.png);
+}
+
+.partners-item {
+  width: 194px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partner-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.partner-interests {
+  font-family: "Roboto", sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-more {
+  width: 280px;
+  height: 40px;
+  border: 2px solid rgb(255, 78, 80);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(255, 78, 80);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+
+@media (max-width: 767px) {
+  .partners-item:not(:last-child) {
     margin-bottom: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 940px) {
+  .partners-list {
+    width: 492px;
+  }
 }
 
-.partner-name{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgb(51, 51, 51);
-    text-align: center;
+@media (min-width: 768px) {
+  .wrapper {
+    width: 748px;
+  }
+
+  .promo {
+    min-height: 700px;
+  }
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 38px;
+    margin-bottom: 156px;
+  }
+
+  .logo {
+    line-height: 40px;
     margin: 0;
     padding: 0;
-    margin-bottom: 18px;
-}
+  }
 
-.partner-interests{
-    font-family: "Roboto", sans serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: rgb(51, 51, 51);
-    text-align: center;
+  .entrance {
     margin: 0;
     padding: 0;
-}
+  }
+  .slogan {
+    margin-bottom: 40px;
+    font-size: 52px;
+  }
 
-.more{
-    width: 280px;
-    height: 40px;
-    border: 2px solid rgb(255, 78, 80);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgb(255, 78, 80);
-    text-align: center;
-    display: block;
+  .full-slogan {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .partners {
+    padding-top: 75px;
+  }
+
+  .section-title {
+    margin-bottom: 34px;
+  }
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 57px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .partners-item {
+    width: 236px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .partners-item:nth-child(-n + 2) {
+    margin-bottom: 60px;
+  }
+
+  .btn-more {
+    width: 192px;
+  }
 }
-  
+
+@media (min-width: 940px) {
+  .wrapper {
+    width: 940px;
+  }
+
+  .partners-item {
+    width: 222px;
+  }
+}
