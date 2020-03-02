@@ -14,22 +14,9 @@ img {
   height: auto;
 }
 
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.site-header {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.entrance {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 117px;
+/* HEADER */
+.entrance a{
+  display: inline-block;
 }
 
 .login,
@@ -49,6 +36,10 @@ img {
   border-radius: 20px;
 }
 
+.entrance{
+  text-align: center;
+}
+
 .promo {
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
@@ -59,21 +50,21 @@ img {
   background-color: #000000;
 }
 
-.logo h1 {
+ .logo h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
+  text-align: center;
+} 
 
 .logo {
   text-decoration: none;
-  margin-bottom: 34px;
 }
+/* END HEADER */
 
+/* SLOGAN WITH BTN*/
 .slogan {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -81,9 +72,6 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: 20px;
 }
 
 .full-slogan {
@@ -92,14 +80,10 @@ img {
   font-size: 18px;
   color: #ffffff;
   text-align: center;
-  width: 220px;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: 20px;
 }
 
 .btn-find {
-  display: block;
+  display: inline-block;
   width: 280px;
   height: 40px;
   border-radius: 20px;
@@ -108,43 +92,40 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  margin: 0 auto;
-  padding: 0;
   border: none;
 }
 
+.btn{
+  text-align: center;
+}
+/* END SLOGAN WITH BTN*/
+
+/* SECTION PARTNERS */
+
+.partners-item{
+  text-align: center;
+}
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: rgb(51, 51, 51);
   text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 18px;
-}
-
-.partners {
-  padding-top: 68px;
 }
 
 .partners-list {
   list-style: none;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 22px;
 }
+
+
 .partner-photo img {
   border-radius: 50%;
 }
 
 .partner-photo {
   display: inline-block;
-  margin: 0 auto;
-  padding: 0;
   position: relative;
-  margin-bottom: 22px;
 }
 
 .partner-photo::after {
@@ -181,12 +162,6 @@ img {
   background-image: url(../img/icons/fly.png);
 }
 
-.partners-item {
-  width: 194px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .partner-name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -209,6 +184,7 @@ img {
 }
 
 .btn-more {
+  display: inline-block;
   width: 280px;
   height: 40px;
   border: 2px solid rgb(255, 78, 80);
@@ -222,27 +198,91 @@ img {
   font-size: 14px;
   color: rgb(255, 78, 80);
   text-align: center;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 57px;
 }
+/* END SECTION PARTNERS */
 
-@media (max-width: 767px) {
+/* MEDIA RULES */
+
+/* .site-header {
+  padding-top: 20px;
+} */
+
+/* .entrance {
+  margin-bottom: 117px;
+} */
+
+
+/* .logo h1 {
+  margin: 0;
+  padding: 0;
+} */
+
+/* .logo {
+  margin-bottom: 34px;
+} */
+
+/* .slogan {
+  padding: 0;
+  margin-bottom: 20px;
+} */
+
+/* .full-slogan {
+  padding: 0;
+  margin-bottom: 20px;
+} */
+
+
+/* .section-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+} */
+
+/* .partners {
+  padding-top: 68px;
+} */
+
+/* .partners-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+} */
+
+
+/* .partner-photo {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+} */
+
+/* .partners-item {
+  width: 194px;
+  margin: 0 ;
+  padding: 0;
+} */
+
+
+/* .btn-more {
+  margin: 0 ;
+  margin-bottom: 57px;
+} */
+
+/* @media (max-width: 767px) {
   .partners-item:not(:last-child) {
     margin-bottom: 28px;
   }
-}
-@media (min-width: 768px) and (max-width: 940px) {
+} */
+/* @media (min-width: 768px) and (max-width: 992px) {
   .partners-list {
     width: 492px;
-  }
+  } */
 
-  .partners-item:nth-child(-n + 2) {
+  /* .partners-item:nth-child(-n + 2) {
     margin-bottom: 60px;
-  }
-}
+  } */
+/* } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .wrapper {
     width: 748px;
   }
@@ -310,9 +350,9 @@ img {
   .btn-more {
     width: 192px;
   }
-}
+} */
 
-@media (min-width: 940px) {
+/* @media (min-width: 940px) {
   .wrapper {
     width: 940px;
   }
@@ -320,4 +360,4 @@ img {
   .partners-item {
     width: 222px;
   }
-}
+} */
