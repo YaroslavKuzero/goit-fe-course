@@ -14,8 +14,9 @@ img {
   height: auto;
 }
 
+
 /* HEADER */
-.entrance a{
+.entrance a {
   display: inline-block;
 }
 
@@ -36,7 +37,7 @@ img {
   border-radius: 20px;
 }
 
-.entrance{
+.entrance {
   text-align: center;
 }
 
@@ -50,19 +51,20 @@ img {
   background-color: #000000;
 }
 
- .logo h1 {
+.logo h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-} 
+}
 
 .logo {
   text-decoration: none;
 }
 /* END HEADER */
+
 
 /* SLOGAN WITH BTN*/
 .slogan {
@@ -95,14 +97,15 @@ img {
   border: none;
 }
 
-.btn{
+.btn {
   text-align: center;
 }
 /* END SLOGAN WITH BTN*/
 
+
 /* SECTION PARTNERS */
 
-.partners-item{
+.partners-item {
   text-align: center;
 }
 .section-title {
@@ -117,7 +120,6 @@ img {
   list-style: none;
   text-align: center;
 }
-
 
 .partner-photo img {
   border-radius: 50%;
@@ -201,119 +203,105 @@ img {
 }
 /* END SECTION PARTNERS */
 
+
 /* MEDIA RULES */
 
-/* .site-header {
-  padding-top: 20px;
-} */
+@media screen and (min-width: 320px) {
+  .site-header {
+    padding-top: 20px;
+  }
 
-/* .entrance {
-  margin-bottom: 117px;
-} */
+  .entrance {
+    margin-bottom: 117px;
+  }
 
+  .logo h1 {
+    margin: 0;
+    padding: 0;
+  }
 
-/* .logo h1 {
-  margin: 0;
-  padding: 0;
-} */
+  .logo {
+    margin-bottom: 34px;
+  }
 
-/* .logo {
-  margin-bottom: 34px;
-} */
+  .slogan {
+    margin-bottom: 20px;
+  }
 
-/* .slogan {
-  padding: 0;
-  margin-bottom: 20px;
-} */
+  .full-slogan {
+    margin-bottom: 20px;
+  }
 
-/* .full-slogan {
-  padding: 0;
-  margin-bottom: 20px;
-} */
+  .section-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+  }
 
+  .partners {
+    padding-top: 68px;
+  }
 
-/* .section-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 18px;
-} */
+  .partners-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+  }
 
-/* .partners {
-  padding-top: 68px;
-} */
+  .partner-photo {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+  }
 
-/* .partners-list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 22px;
-} */
+  .partners-item {
+    margin: 0;
+    padding: 0;
+  }
 
+  .btn-more {
+    margin-bottom: 57px;
+  }
+}
 
-/* .partner-photo {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 22px;
-} */
-
-/* .partners-item {
-  width: 194px;
-  margin: 0 ;
-  padding: 0;
-} */
-
-
-/* .btn-more {
-  margin: 0 ;
-  margin-bottom: 57px;
-} */
-
-/* @media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .partners-item:not(:last-child) {
     margin-bottom: 28px;
   }
-} */
-/* @media (min-width: 768px) and (max-width: 992px) {
-  .partners-list {
-    width: 492px;
-  } */
 
-  /* .partners-item:nth-child(-n + 2) {
-    margin-bottom: 60px;
-  } */
-/* } */
-
-/* @media (min-width: 768px) {
-  .wrapper {
-    width: 748px;
+  .partner-interests {
+    max-width: 196px;
+    margin: 0 auto;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .partners-item:nth-child(-n + 2) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .promo {
     min-height: 700px;
   }
 
-  .btn-find{
+  .btn-find {
     width: 226px;
   }
-  
+
   .site-header {
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 38px;
     margin-bottom: 156px;
   }
 
-  .logo {
-    line-height: 40px;
-    margin: 0;
-    padding: 0;
-  }
-
   .entrance {
     margin: 0;
     padding: 0;
   }
+
   .slogan {
     margin-bottom: 40px;
     font-size: 52px;
@@ -332,32 +320,22 @@ img {
   .section-title {
     margin-bottom: 34px;
   }
+
   .partners-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
     margin-bottom: 40px;
   }
 
   .partners-item {
-    width: 236px;
-    margin: 0;
-    padding: 0;
+    max-width: 236px;
   }
 
   .btn-more {
     width: 192px;
   }
-} */
+}
 
-/* @media (min-width: 940px) {
-  .wrapper {
-    width: 940px;
-  }
-
+@media screen and (min-width: 992px) {
   .partners-item {
-    width: 222px;
+    max-width: 222px;
   }
-} */
+}
