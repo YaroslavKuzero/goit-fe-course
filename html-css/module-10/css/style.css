@@ -27,8 +27,7 @@ img {
 .banner {
   background-image: -webkit-gradient(
       linear,
-      left top,
-      left bottom,
+      left top, left bottom,
       from(rgba(243, 129, 129, 0.9)),
       to(rgba(252, 227, 138, 0.9))
     ),
@@ -369,8 +368,7 @@ img {
   display: block;
   background-image: -webkit-gradient(
     linear,
-    left top,
-    left bottom,
+    left top, left bottom,
     from(rgba(243, 129, 129, 0.9)),
     to(rgba(252, 227, 138, 0.9))
   );
@@ -611,8 +609,7 @@ input::placeholder {
   .banner {
     background-image: -webkit-gradient(
         linear,
-        left top,
-        left bottom,
+        left top, left bottom,
         from(rgba(243, 129, 129, 0.9)),
         to(rgba(252, 227, 138, 0.9))
       ),
