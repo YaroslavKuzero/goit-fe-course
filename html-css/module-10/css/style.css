@@ -25,94 +25,29 @@ img {
 
 /* BANNER */
 .banner {
-  background-image: url(/html-css/module-10/img/banner.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    ),
+    url(/html-css/module-10/img/banner.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(/html-css/module-10/img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 1000px;
-  position: relative;
   margin-bottom: 50px;
 }
-
-.banner--overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top, left bottom,
-    from(rgba(243, 129, 129, 0.9)),
-    to(rgba(252, 227, 138, 0.9))
-  );
-  background-image: linear-gradient(
-    rgba(243, 129, 129, 0.9),
-    rgba(252, 227, 138, 0.9)
-  );
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.site-greetings--slogan {
-  font-size: 72px;
-  font-family: "Kaushan Script", cursive;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 56px;
-  color: rgb(255, 255, 255);
-}
-
-.site-greetings--invitation {
-  font-weight: 700;
-  font-size: 150px;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(255, 255, 255);
-  line-height: 140px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 126px;
-}
-
-.site-greetings--btn {
-  font-weight: 700;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0);
-  width: 164px;
-  height: 44px;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: color 200ms linear;
-  transition: color 200ms linear;
-  -webkit-transition: border-color 200ms linear;
-  transition: border-color 200ms linear;
-}
-
-.site-greetings--btn:hover,
-.site-greetings--btn:focus {
-  color: rgb(243, 129, 129);
-  border-color: rgb(243, 129, 129);
-}
-
 /* HEADER */
 .site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  margin-bottom: 120px;
 }
 
 .logo {
@@ -133,9 +68,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   height: 52px;
   margin: 0px auto;
 }
@@ -148,9 +83,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .menu--link {
@@ -198,6 +133,63 @@ img {
 
 .menu--item:hover .menu--link::after {
   opacity: 1;
+}
+
+.site-greetings {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.site-greetings--slogan {
+  font-size: 72px;
+  font-family: "Kaushan Script", cursive;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 56px;
+  color: rgb(255, 255, 255);
+}
+
+.site-greetings--invitation {
+  font-weight: 700;
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 140px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 126px;
+}
+
+.site-greetings--btn {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  width: 164px;
+  height: 44px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+  -webkit-transition: border-color 200ms linear;
+  transition: border-color 200ms linear;
+}
+
+.site-greetings--btn:hover,
+.site-greetings--btn:focus {
+  color: rgb(243, 129, 129);
+  border-color: rgb(243, 129, 129);
 }
 
 /* Section Services */
@@ -322,7 +314,7 @@ img {
   flex-wrap: wrap;
   align-content: flex-end;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -377,7 +369,8 @@ img {
   display: block;
   background-image: -webkit-gradient(
     linear,
-    left top, left bottom,
+    left top,
+    left bottom,
     from(rgba(243, 129, 129, 0.9)),
     to(rgba(252, 227, 138, 0.9))
   );
@@ -393,9 +386,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   opacity: 0;
   -webkit-transition: -webkit-transform 200ms linear;
   transition: -webkit-transform 200ms linear;
@@ -423,9 +416,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   -webkit-transition: fill 200ms linear;
@@ -473,12 +466,12 @@ img {
 .team--card:hover .hover-effects {
   opacity: 1;
   -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 .team--card:hover .team--img {
   -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 /* Footer */
@@ -486,9 +479,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   height: 62px;
@@ -511,9 +504,9 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: end;
-          justify-content: end;
+  justify-content: end;
   margin: 0;
   padding: 0;
 }
@@ -612,9 +605,24 @@ input::placeholder {
 }
 
 /* MEDIA */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .banner {
-    background-image: url(/html-css/module-10/img/banner@2x.jpg);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(243, 129, 129, 0.9)),
+        to(rgba(252, 227, 138, 0.9))
+      ),
+      url(/html-css/module-10/img/banner@2x.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(243, 129, 129, 0.9),
+        rgba(252, 227, 138, 0.9)
+      ),
+      url(/html-css/module-10/img/banner@2x.jpg);
   }
 
   .services--item:nth-child(1) {
