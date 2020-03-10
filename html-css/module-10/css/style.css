@@ -32,13 +32,13 @@ img {
       from(rgba(243, 129, 129, 0.9)),
       to(rgba(252, 227, 138, 0.9))
     ),
-    url(/html-css/module-10/img/banner.jpg);
+    url(../img/banner.jpg);
   background-image: linear-gradient(
       to bottom,
       rgba(243, 129, 129, 0.9),
       rgba(252, 227, 138, 0.9)
     ),
-    url(/html-css/module-10/img/banner.jpg);
+    url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -616,13 +616,13 @@ input::placeholder {
         from(rgba(243, 129, 129, 0.9)),
         to(rgba(252, 227, 138, 0.9))
       ),
-      url(/html-css/module-10/img/banner@2x.jpg);
+      url(../img/banner@2x.jpg);
     background-image: linear-gradient(
         to bottom,
         rgba(243, 129, 129, 0.9),
         rgba(252, 227, 138, 0.9)
       ),
-      url(/html-css/module-10/img/banner@2x.jpg);
+      url(../img/banner@2x.jpg);
   }
 
   .services--item:nth-child(1) {
