@@ -1,0 +1,18 @@
+.logo {
+    @extend %nullmp;
+}
+
+
+.logo--link {
+    @extend %link;
+    font-weight: $bold;
+    font-size: $additional-fz*2;
+    font-family: $main-font;
+    color: $white;
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+    color: $yellow;
+}
+}

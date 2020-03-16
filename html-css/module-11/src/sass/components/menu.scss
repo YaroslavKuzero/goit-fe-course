@@ -1,0 +1,59 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    margin: 0px auto;
+}
+
+.menu--list {
+    width: 691px;
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu--link {
+    @extend %link;
+    font-family: $main-font;
+    text-transform: uppercase;
+    color: $white;
+    transition: color 200ms linear;
+
+    &::after {
+        display: block;
+        content: "";
+        background-color: $yellow;
+        width: 100%;
+        height: 3px;
+        margin: 10px auto 0px;
+        opacity: 0;
+        transition: opacity 200ms linear;
+    }
+
+    &:hover,
+    &:focus,{
+        color: $yellow;
+    }
+
+    &:hover .menu--icon {
+        fill:$yellow;
+    }
+}
+
+.menu--icon {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: $white;
+}
+
+.menu--item {
+    font-weight: $bold;
+    font-size: $main-fz;
+
+    &:hover .menu--link::after {
+        opacity: 1;
+    }
+}

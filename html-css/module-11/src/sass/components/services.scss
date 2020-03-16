@@ -1,0 +1,93 @@
+.services {
+    margin: 0px auto;
+    margin-bottom: 94px;
+}
+
+.services--item {
+    @extend %list;
+    width: 380px;
+    padding-left: 82px;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    background-size: 32px;
+
+    &:nth-child(1) {
+        background-image: url(../images/icons/services-icons/photography.png);
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/services-icons/photography@2x.png);
+        }
+    }
+
+    &:nth-child(2) {
+        background-image: url(../images/icons/services-icons/webdesign.png);
+        @media
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/icons/services-icons/webdesign@2x.png);
+        }
+    }
+
+    &:nth-child(3) {
+        background-image: url(../images/icons/services-icons/creativity.png);
+        @media
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/icons/services-icons/creativity@2x.png)
+        }
+    }
+
+    &:nth-child(4) {
+        background-image: url(../images/icons/services-icons/seo.png);
+        @media
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/icons/services-icons/seo@2x.png);
+        }
+    }
+
+    &:nth-child(5) {
+        background-image: url(../images/icons/services-icons/css-html.png);
+        @media
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/icons/services-icons/css-html@2x.png);
+        }
+    }
+
+    &:nth-child(6) {
+        background-image: url(../images/icons/services-icons/digital.png);
+        @media
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/icons/services-icons/digital@2x.png);
+        }
+    }
+}
+
+.services--list {
+    @extend %nullmp;
+    min-height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.services--name {
+    @extend %nullmp;
+    margin-bottom: 16px;
+    font-family: $main-font;
+    font-weight: $normal;
+    font-size: $main-fz;
+    color: $light-black;
+    text-transform: uppercase;
+}
+
+.services--description {
+    @extend %nullmp;
+    font-family: $additional-font;
+    font-weight: $normal;
+    font-size: $additional-fz;
+    line-height: 24px;
+    color: $dark-grey;
+}

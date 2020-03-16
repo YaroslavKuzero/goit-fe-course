@@ -1,0 +1,26 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+//variables, placeholders, mixins and other.
+@import 'helpers/variables';
+@import 'helpers/placeholder';
+
+//base styles
+@import 'normalize.scss';
+@import 'base.scss';
+
+//components
+@import 'components/container';
+@import 'components/banner';
+@import 'components/site-header';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/site-greetings';
+@import 'components/title';
+@import 'components/services';
+@import 'components/overlay';
+@import 'components/team';
+@import 'components/socials';
+@import 'components/footer-form';
+@import 'components/footer-info';

@@ -41,7 +41,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 1000px;
+  min-height: 1000px;
   margin-bottom: 50px;
 }
 /* HEADER */
@@ -390,10 +390,12 @@ img {
   opacity: 0;
   -webkit-transition: -webkit-transform 200ms linear;
   transition: -webkit-transform 200ms linear;
-  transition: transform 200ms linear;
+  -webkit-transition: opacity, -webkit-transform 200ms linear;
+  transition: opacity, -webkit-transform 200ms linear;
+  transition: opacity, transform 200ms linear;
+  transition: opacity, transform 200ms linear, -webkit-transform 200ms linear;
   transition: transform 200ms linear, -webkit-transform 200ms linear;
   -webkit-transition: opacity 200ms linear;
-  transition: opacity 200ms linear;
 }
 
 /* Social icons */

@@ -1,0 +1,22 @@
+.footer {
+    @extend %nullmp;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 62px;
+    border-top: 1px solid $light;
+}
+
+.designed-by {
+    @extend %nullmp;
+    font-family: $main-font;
+    font-weight: $normal;
+    font-size: $main-fz;
+    color: $light-black;
+    
+    &>a {
+        @extend %link;
+        color: $rose;
+    }
+}

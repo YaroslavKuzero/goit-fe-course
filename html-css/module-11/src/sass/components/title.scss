@@ -1,0 +1,24 @@
+.title {
+    font-family: $main-font;
+    font-weight: $bold;
+    font-size: $additional-fz*2;
+    text-transform: uppercase;
+    @extend %nullmp;
+
+    &--slogan {
+    font-family: $cursive-font;
+    font-size: 24px;
+    color: $light-black;
+    text-align: center;
+    @extend %nullmp;
+
+        &::after {
+        display: block;
+        content: "";
+        background-color: $rose;
+        width: 60px;
+        height: 3px;
+        margin: 43px auto 64px;
+       }
+    }
+}

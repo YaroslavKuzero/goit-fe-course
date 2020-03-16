@@ -1,0 +1,70 @@
+.team {
+    margin: 0px auto;
+    margin-bottom: 154px;
+}
+
+.team--description {
+    font-family: $additional-font;
+    font-weight: $normal;
+    font-size: $additional-fz;
+    line-height: 24px;
+    color: $dark-grey;
+    text-align: center;
+    @extend %nullmp;
+    margin-bottom: 92px;
+}
+
+.team--list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    @extend %nullmp;
+}
+
+.team--card {
+    width: 380px;
+    @extend %list;
+
+    &:hover .hover-effects {
+        opacity: 1;
+        transform: translate(-10px, -10px);
+    }
+
+    &:hover .team--img {
+        transform: translate(-10px, -10px);
+    }
+}
+
+.team--picture {
+    background-color: $turguoise;
+    position: relative;
+}
+
+.team--img {
+    transition: transform 200ms linear;
+}
+
+.team--name {
+    font-family: $main-font;
+    font-weight: $normal;
+    font-size: $main-fz;
+    color: light-black;
+    text-transform: uppercase;
+    text-align: center;
+    @extend %nullmp;
+    padding-top: 28px;
+    padding-bottom: 10px;
+}
+
+.team--position {
+    font-family: $additional-font;
+    font-style: italic;
+    font-weight: $thin;
+    font-size: $additional-fz;
+    left: 24px;
+    color: $dark-grey;
+    text-transform: capitalize;
+    text-align: center;
+    @extend %nullmp;
+}

@@ -1,0 +1,50 @@
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    @extend %nullmp;
+
+    & button {
+        @extend %nullmp;
+        font-family: $main-font;
+        font-weight: $bold;
+        font-size: $main-fz;
+        color: $white;
+        text-transform: uppercase;
+        background-color: $turguoise;
+        width: 150px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+
+    & input {
+        @extend %nullmp;
+        padding-left: 13px;
+        height: 40px;
+        width: 230px;
+        border: 1px solid $light;
+        border-right: none;
+    }
+}
+
+input:valid {
+    outline-color: $turguoise;
+    overflow: hidden;
+}
+
+input:invalid {
+    outline-color: $rose;
+    overflow: hidden;
+}
+
+input::placeholder {
+    font-family: $additional-font;
+    font-style: italic;
+    font-weight: $thin;
+    font-size: $additional-fz;
+    line-height: 24px;
+    color: $grey;
+    text-transform: capitalize;
+    @extend %nullmp;
+}
