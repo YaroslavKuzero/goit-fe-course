@@ -1,55 +1,56 @@
 .socials {
-    @extend %list;
-    display: flex;
+  @extend %list;
+  display: flex;
 }
 
 .social--link {
-    @extend %link;
-    width: 55px;
-    height: 55px;
-    background-color: $yellow;
-    fill: $rose;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color, fill 200ms linear;
+  @extend %link;
+  width: 55px;
+  height: 55px;
+  background-color: $yellow;
+  fill: $rose;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color, fill 200ms linear;
 
 
-    .social--icons &:hover,
-    .social--icons &:focus {
+  .social--icons &:hover,
+  .social--icons &:focus {
     background-color: $rose;
     fill: $white;
-    }
+  }
 
 }
 
 .social--icons {
-    margin-right: 1px;
-    &:last-child {
-        margin-right: 0px;
-    }
+  margin-right: 1px;
+  
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .social--pin {
-    display: block;
+  display: block;
 }
 
 .social--pin__facebook {
-    width: 13px;
-    height: 26px;
+  width: 13px;
+  height: 26px;
 }
 
 .social--pin__twitter {
-    width: 26px;
-    height: 22px;
+  width: 26px;
+  height: 22px;
 }
 
 .social--pin__pinterest {
-    width: 21px;
-    height: 26px;
+  width: 21px;
+  height: 26px;
 }
 
 .social--pin__instagram {
-    width: 26px;
-    height: 26px;
+  width: 26px;
+  height: 26px;
 }
