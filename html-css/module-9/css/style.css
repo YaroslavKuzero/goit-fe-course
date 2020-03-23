@@ -85,7 +85,7 @@ img {
 }
 
 .btn-find {
-  display: inline-block;
+  display: block;
   width: 280px;
   height: 40px;
   border-radius: 20px;
@@ -95,11 +95,12 @@ img {
   font-weight: 700;
   font-size: 14px;
   border: none;
+  margin: 0 auto;
 }
 
-.btn {
+/* .btn {
   text-align: center;
-}
+} */
 /* END SLOGAN WITH BTN*/
 
 
@@ -186,7 +187,7 @@ img {
 }
 
 .btn-more {
-  display: inline-block;
+  display: block;
   width: 280px;
   height: 40px;
   border: 2px solid rgb(255, 78, 80);
@@ -199,7 +200,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   color: rgb(255, 78, 80);
-  text-align: center;
+  margin: 0 auto;
 }
 /* END SECTION PARTNERS */
 
